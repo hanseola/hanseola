@@ -1,4 +1,5 @@
 import discord
+import os
 
 client = discord.Client()
 
@@ -67,5 +68,5 @@ async def on_ready():
         if message.content.startswith("설아야 나 좋아해?"):
             await message.channel.send("말하지마 .. 개시러;;")
 
-
-client.run("NjUzMjU0MjcyMjY3MzIxMzY0.Xe0UpQ.RKVmgPTlq04KmH8ptBpt4AUWHoI")
+access_token = os.environp["NjUzMjU0MjcyMjY3MzIxMzY0.Xe0UpQ.RKVmgPTlq04KmH8ptBpt4AUWHoI"]
+client.run("access_token")
